@@ -40,7 +40,6 @@ source scripts/inferall_vbsvvhjets.sh
 ## note: need to change things in runnall like TAG=abcdnet_v7 and what config files and models u r using
 
 cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis 
-
 source env_analysis/bin/activate 
 source setup.sh; 
 export PYTHONPATH="${PYTHONPATH}:/home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis"; 
