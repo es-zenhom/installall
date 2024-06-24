@@ -25,10 +25,19 @@ source scripts/runall_vbsvvhjets_semimerged.sh
 
  
 ## running all after training
-
+source root.sh
 cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis
 source setup.sh;  
 export PYTHONPATH="${PYTHONPATH}:/home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis"; 
 source scripts/runall_vbsvvhjets_semimerged.sh 
 ## note: need to change things in runnall like TAG=abcdnet_v7
+
+source root.sh
+cd public_html/uf_work/vbs2/abcdnet
+source uniqueenv/bin/activate 
+source setup_ucsd.sh 
+source scripts/inferall_vbsvvhjets.sh 
+## note: need to change things in runnall like TAG=abcdnet_v7 and what config files and models u r using
+
+
  
