@@ -44,4 +44,15 @@ source env_analysis/bin/activate
 source setup.sh; 
 export PYTHONPATH="${PYTHONPATH}:/home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis"; 
 source scripts/addall_vbsvvhjets.sh 
+
+## datacard:
+cd 
+source .bashrc 
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis 
+source setup.sh;  
+export PYTHONPATH="${PYTHONPATH}:/home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis";  
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts 
+conda activate myenv 
+cd .. 
+python3 scripts/make_datacards_vbsvvh.py 
  
