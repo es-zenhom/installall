@@ -59,3 +59,8 @@ conda activate myenv
 cd .. 
 python3 scripts/make_datacards_vbsvvh.py 
  
+## run grapher:
+## note need to change cuts in the run_grapher_all.sh and the output version tag
+source root.sh
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts
+source run_grapher_all.sh
