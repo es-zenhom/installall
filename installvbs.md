@@ -57,7 +57,7 @@ export PYTHONPATH="${PYTHONPATH}:/home/users/eslam.zenhom/public_html/uf_work/vb
 cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts 
 conda activate myenv 
 cd .. 
-python3 scripts/make_datacards_vbsvvh.py 
+python3 scripts/make_datacards_vbsvvh.py abcdnet_v11
  
 ## run grapher:
 ## note need to change cuts in the run_grapher_all.sh and the output version tag
