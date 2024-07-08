@@ -44,6 +44,7 @@ source env_analysis/bin/activate
 source setup.sh; 
 export PYTHONPATH="${PYTHONPATH}:/home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis"; 
 source scripts/addall_vbsvvhjets.sh 
+## note: need to change things in addall like TAG=abcdnet_v7
 
 
 
@@ -58,9 +59,19 @@ cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts
 conda activate myenv 
 cd .. 
 python3 scripts/make_datacards_vbsvvh.py abcdnet_v11
+## don't forget to change the argument at the end of the command : abcdnet_v11
  
 ## run grapher:
 ## note need to change cuts in the run_grapher_all.sh and the output version tag
 source root.sh
 cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts
 source run_grapher_all.sh
+
+## run limits:
+cd 
+
+source setup_higgs_combine.sh 
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/combine/vbsvvh  
+sh runLimits.sh datacards/VBSVVH_semimerged_abcdnet_v11 
+
+sh plotLimits.sh results/VBSVVH_semimerged_abcdnet_v11
