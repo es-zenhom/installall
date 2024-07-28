@@ -63,9 +63,17 @@ python3 scripts/make_datacards_vbsvvh.py abcdnet_v11
  
 ## run grapher:
 ## note need to change cuts in the run_grapher_all.sh and the output version tag
+
+# gives region A histograms
 source root.sh
 cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts
 source run_grapher_all.sh
+
+# gives all events after preselection histograms
+source root.sh
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts
+source run_grapher_all.sh all 
+
 
 ## run limits:
 cd 
