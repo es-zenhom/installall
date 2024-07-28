@@ -75,3 +75,20 @@ cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/combine/vbsvvh
 sh runLimits.sh datacards/VBSVVH_semimerged_abcdnet_v11 
 
 sh plotLimits.sh results/VBSVVH_semimerged_abcdnet_v11
+
+
+
+## run the plotter:
+ 
+# Without data: 
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts  
+source rooutil/bin/thisrooutil.sh 
+source rooutil/bin/setuproot.sh 
+python3 plot.py output_abcdnet_v11 
+
+
+# With data 
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts  
+source rooutil/bin/thisrooutil.sh 
+source rooutil/bin/setuproot.sh 
+python3 plot.py output_abcdnet_v11  data withdata 
