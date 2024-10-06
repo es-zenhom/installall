@@ -100,3 +100,19 @@ cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/analysis/scripts
 source rooutil/bin/thisrooutil.sh 
 source rooutil/bin/setuproot.sh 
 python3 plot.py output_abcdnet_v11  data withdata 
+
+
+#impacts
+vbs2/combine/vbsvvh/impacts/plotImpacts.sh
+Need to change DATACARD=../datacards/VBSVVH_semimerged_abcdnet_v11/scan_CV_1p0_C2V_2p0_C3_1p0.dat 
+Then new terminal and:
+source setup_higgs_combine.sh 
+cd /home/users/eslam.zenhom/public_html/uf_work/vbs2/combine/vbsvvh/impacts
+source plotImpacts.sh
+Then
+source plotImpacts.sh --expectSignal=1
+
+
+
+
+https://docs.google.com/document/d/1CCudtAetTJnGWF3v3UUIShcg6WCz1zDZHmVcsN2Udog/edit
